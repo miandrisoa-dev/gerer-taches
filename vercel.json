@@ -6,9 +6,5 @@
   "routes": [
     { "src": "/build/(.*)", "dest": "/public/build/$1" },
     { "src": "/(.*)", "dest": "api/index.php" }
-  ],
-  "builds": [
-    { "src": "api/index.php", "use": "vercel-php@0.9.3" },
-    { "src": "public/build/**", "use": "@vercel/static" }
   ]
 }
